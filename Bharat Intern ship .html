@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+<body>
+    <header class="container">
+        <div class="page-header">
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#"  class="active" style="--navAni:1">Home</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle" >
+                <i class="bx bxs-moon"></i>
+            </label>
+    </header>
+    <section class="container">
+        <div class="main">
+            <div class="images">
+                <img src="C:\Users\tamiz\Downloads\linkedin banner.png" alt="backgroud" class="img-w">
+                <span class="bg-effect-1">
+                <span class="bg-effect-1">
+                </span>
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1><span style="color:#f9532d;">Tamizh Murugan</span>T</h1>  
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/tamizhmurugant" style="--socialAni:1"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/bikashdev01" style="--socialAni:3"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container"> 
+        <div class="project1" align="center">
+            <h2>Portfolio Website</h2>
+            <p>The project is to create a Website which focuses on a person's Portfolio. The project has to be created using html and css.To view the source code of the project</p>
+            <center><button id="link"><a href="https://github.com/CodecraftsFamilySMBCL/internship.git">Visit Here!</a></button></center>
+        </div>
+        <div class="project2" align="center">
+            <h2>Weather Website</h2>
+            <p>The project is to create a Weather Website, that has to be created using html, css and javascript.To view the source code of the project</p>
+            <center><button><a href="https://github.com/CodecraftsFamilySMBCL/weather-app.git">Visit Here!</a></button></center>
+        </div>
+        <div class="project1" align="center">
+            <h2>Netflix Home page</h2>
+            <p>The project is to create a Netflix home page using html and css .To view the source code of the project</p>
+            <center><button><a href=" https://github.com/CodecraftsFamilySMBCL/Netflix-.git">Visit Here!</a></button></center>
+        </div>
+        <h1>skills</h1>
+        <h3>Languages known</h3>
+        <ul>
+            <li><b>c</b></li>
+            <li><b>c++</b></li>
+            <li><b>java</b></li>
+            <li><b>html</b></li>
+            <li><b>css</b></li>
+            <li><b>aws</b></li>
+            <li><b>networking</b></li>
+            <li><b>python beginner</b></li>
+        </ul>
+        <p>President of NSS Club at University level </p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/constancexaviers-cse?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--socialAni:1"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/CodecraftsFamilySMBCL/internship.git" style="--socialAni:3"><i class="bx bxl-github"></i></a>
+        </div>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+     <footer>
+        <div class="container"></div>
+            <div class="row"></div>
+             <div class="col-md-4"></div>
+                 <p>&copy; Tamizh Murugan Portfolio 2023</p>
+     </footer>              
+</div>
+</body>
+</head>
+</html>
